@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products-Samlaun</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="styleset" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="samlaunlogo.jpg" width="125px" height="85px" alt="">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><b><a href="index.html">HOME</a></li></b>
+                    <li><b><a href="product.html">PRODUCTS</a></b></li>   
+                    <li><b><a href="about.html">ABOUT</a></b></li>
+                    <li><b><a href="contact.html">CONTACT</a></b></li>
+                    <li><b><a href="account.html">ACCOUNT</a></b></li>
+                </ul>
+            </nav>
+            <i class="fa-brands fa-opencart"></i>
+            <img src="menu.png"class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+     </div>
+
+     <!---cart-items details------->   
+     <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="achar amla.jpg">
+                        <div>
+                            <p>Amla Pickle</p>
+                            <small>$5.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div> 
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="barnyard.jpg">
+                        <div>
+                            <p>Barnyard</p>
+                            <small>$4.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div> 
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$4.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Buransh squash.jpg">
+                        <div>
+                            <p>Buransh squash</p>
+                            <small>$3.20</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div> 
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$3.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$17.00</td>
+                </tr>
+            </table>
+        </div>
+     </div>
+        
+<!----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="playstore.jpg">
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logoio.jpg"  width="125px" height="85px" >
+                <p>From mountains to your doorstep!!<br>We are building the world's first source-to-table Premium Himalayan brand that makes high-quality and authentic Himalayan produce accessible to all.</p>
+            </div>
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post </li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    <p>Download App for android and ios mobile phone.</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>YouTube </li>
+                        <li>LinkedIn</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+        </div>
+        <hr> 
+        <hr>   <p class="Copyright">Copyright 2023-ApnaPahad</p> 
+    </div>
+</div>
+<!------js for toggle menu-->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+
+</body>
+</html>

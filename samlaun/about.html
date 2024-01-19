@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samlaun | Ecommerce website design</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="styleset" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="samlaunlogo.jpg" width="125px" height="85px" alt="">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><b><a href="index.html">HOME</a></li></b>
+                    <li><b><a href="product.html">PRODUCTS</a></b></li>   
+                    <li><b><a href="">ABOUT</a></b></li>
+                    <li><b><a href="contact.html">CONTACT</a></b></li>
+                    <li><b><a href="account.html">ACCOUNT</a></b></li>
+                </ul>
+            </nav>
+            <a href="cart.html"> <i class="fa-brands fa-opencart"></i></a> 
+            <img src="menu.png"class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>KNOW US<br></h1>
+                <p><H3>Ab 'pahad ka pani' or'pahad ki jawani'<br>Dono pahad ke kaam aaenge!!</H3></p>
+            </div>
+            <div class="col-2">
+                <img src="newbackgr.jpg">
+            </div>
+        </div>
+     </div>
+    
+    </div> 
+    <hr>   
+    <p><h1>SIMANYA EVERYONE!!</h1></p>
+    <P><H4>Welcome to SAMLAUN, your gateway to the enchanting world of Pahadi products! Nestled in the heart of the majestic Himalayas, we are dedicated to bringing the rich cultural heritage of the mountainous region right to your doorstep.
+
+        Our journey began with a passion for showcasing the unique beauty and traditions of the Pahadi lifestyle. Each product in our collection tells a story – a story of hardworking farmers, centuries-old agricultural techniques, fresh and natural products.
+        
+       <br><br> At SAMLAUN, we curate a diverse range of Pahadi products, from millets ,grains to fresh juices, capturing the essence of the Himalayan spirit. Every item is carefully made, ensuring purity, quality, and a genuine connection to the communities that grow them.
+        
+        We believe in fostering sustainability and supporting local economies. By choosing our Pahadi products, you contribute to the preservation of traditional food and the well-being of farmers and vendors who pour their heart and soul into each product.
+        
+        <br><br>Explore our virtual marketplace, where the mountains meet modernity. Join us in celebrating the spirit of the Himalayas. Thank you for being part of our journey and for choosing to bring a piece of the Pahadi magic into your life.
+        
+        Welcome to a world of timeless mountain-inspired elegance!</H4></P>
+        <hr><br><hr>
+<!-----------brands-------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="swiggy.jpg">
+            </div>
+            <div class="col-5">
+                <img src="amazon.jpg">
+            </div>
+            <div class="col-5">
+                <img src="flipkart.jpg">
+            </div>
+            <div class="col-5">
+                <img src="paytm.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="playstore.jpg">
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logoio.jpg"  width="125px" height="85px" >
+                <p>From mountains to your doorstep!!<br>We are building the world's first source-to-table Premium Himalayan brand that makes high-quality and authentic Himalayan produce accessible to all.</p>
+            </div>
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post </li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    <p>Download App for android and ios mobile phone.</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>YouTube </li>
+                        <li>LinkedIn</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+        </div>
+        <hr> 
+        <hr>   <p class="Copyright">Copyright 2023-ApnaPahad</p> 
+    </div>
+</div>
+
+<!------js for toggle menu-->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+</body>
+</html>
